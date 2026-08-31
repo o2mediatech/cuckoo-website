@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- title -->
+    <title>Cuckoo - Online Car Booking</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all-fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.timepicker.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJ6L...5FfM3dF5gQ8yS12eZhsEpkQTpm9/ETkkT3w6gPXYof56MG5h0eZpC6" crossorigin="anonymous">
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Devotional Tour Section */
+        .devotional-tour {
+            background: url('./images/header.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 300px 0;
+            text-align: center;
+            color: white;
+        }
+        .devotional-tour h1 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        /* Header Section */
+  
+
+        /* About Section */
+        .about {
+            background-color: #f9f9f9;
+            padding: 40px;
+            text-align: center;
+        }
+        .about h2 {
+            font-size: 30px;
+            color: #000;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .about h3, .about h4 {
+            font-size: 30px;
+            color: #000;
+            font-weight: bold;
+			    margin-bottom: 30px;
+				margin-top:30px;
+        }
+        .about p {
+            font-size: 24px;
+    color: #555;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5px;
+    line-height: 40px;
+        }
+        .color-text {
+            font-size: 28px;
+            text-transform: uppercase;
+            color: #ffaa07;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        /* Vehicles Section */
+        .vehicles-section {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .vehicles-section h2 {
+            font-size: 30px;
+            color: #000;
+            margin-bottom: 20px;
+            line-height: 40px;
+            font-weight: bold;
+        }
+        .vehicles {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .vehicle {
+            text-align: center;
+            margin: 10px;
+            width: 100%;
+        }
+        .vehicle img {
+            width: 50%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .vehicle p {
+            font-size: 24px;
+            color: #333;
+            font-weight: bold;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+        .yellow-span {
+            color: #f8a612;
+        }
+
+        /* Theme Button */
+        .theme-btn {
+            font-size: 14px;
+            color: #fff;
+            padding: 14px 25px;
+            transition: all 0.5s;
+            text-transform: uppercase;
+            position: relative;
+            border-radius: 50px;
+            font-weight: 600;
+            letter-spacing: .5px;
+            cursor: pointer;
+            text-align: center;
+            overflow: hidden;
+            border: none;
+            background: rgb(118, 210, 11);
+            background: linear-gradient(90deg, rgba(118, 210, 11, 1) 0%, rgba(114, 175, 0, 1) 14%, rgba(0, 148, 205, 1) 28%, rgba(184, 2, 85, 1) 42%, rgba(229, 58, 0, 1) 56%, rgba(133, 15, 123, 1) 70%, rgba(128, 8, 127, 1) 84%, rgba(255, 195, 11, 1) 98%);
+            box-shadow: var(--box-shadow);
+            z-index: 1;
+            text-decoration: none;
+        }
+
+        /* Best Services Section */
+        .best-services {
+            background-color: #007906;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .best-services h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .best-services .package {
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 50px;
+            padding: 50px;
+            background: #007906;
+        }
+        .best-services .package img {
+            width: 100%;
+            height: auto;
+        }
+        .best-services .package p {
+            font-size: 40px;
+            padding: 20px;
+            font-weight: bold;
+            text-transform: capitalize;
+            color: #fff;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 767px) {
+		
+		.about {
+ 
+    padding: 20px;
+
+}
+
+  br {
+        display: none;
+    }
+            .vehicles-section h2 {
+                font-size: 24px;
+                text-align: center;
+            }
+			
+			
+            .vehicle img {
+                width: 80%;
+            }
+            .vehicle p {
+                font-size: 18px;
+            }
+            .best-services .package {
+                padding: 30px;
+            }
+            .best-services .package p {
+                font-size: 24px;
+            }
+        }
+
+        /* Larger Screen Adjustments */
+        @media (min-width: 768px) {
+            .vehicle img {
+                width: 45%;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+
+
+ <!-- Header Section -->
+       <!-- header area -->
+    <header class="header">
+        <!-- top header -->
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-wrapper">
+                    <div class="header-top-left">
+                        <div class="header-top-contact">
+                            <ul>
+                                <li><a href=""><i class="far fa-envelopes"></i>
+                                        <span class="__cf_email__" data-cfemail="3b52555d547b5e435a564b575e15585456">cuckootourism@gmail.com</span></a></li>
+                                <li><a href=""><i class="far fa-phone-volume"></i> +91 9842244364</a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-top-right">
+                       
+                        <div class="header-top-social">
+                            <span>Follow Us: </span>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-navigation">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container position-relative">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo/logo.png" alt="logo">
+                    </a>
+                    <div class="mobile-menu-right">
+                        <div class="search-btn">
+                            <button type="button" class="nav-right-link"><i class="far fa-search"></i></button>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-mobile-icon"><i class="far fa-bars"></i></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main_nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+                                <a class="nav-link active" href="#" data-bs-toggle="dropdown">Home</a>
+                                
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#aboutus">About</a></li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#Vehicles">Vehicles Details</a>
+                                
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Our Service</a>
+                               
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                        <div class="nav-right">
+                           
+                            <div class="nav-right-btn mt-2">
+                                <a href="https://wa.me/919488877851" class="theme-btn"><span class="fas fa-taxi"></span>Book Now</a>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <!-- search area -->
+                   
+                    <!-- search area end -->
+                </div>
+            </nav>
+        </div>
+    </header>
+	
+	<main class="main">
+	   <!-- hero slider -->
+        <div class="hero-section">
+            <div class="hero-slider owl-carousel owl-theme">
+                <div class="hero-single" style="background: url(assets/img/slider/slider-1.jpg)">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 col-lg-8 mx-auto">
+                                <div class="hero-content text-center">
+                                    
+                                   
+									
+								
+								  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-single" style="background: url(assets/img/slider/slider-2.jpg)">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 col-lg-8 mx-auto">
+                                <div class="hero-content text-center">
+                                   
+                                   
+									
+								
+								  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-single" style="background: url(assets/img/slider/slider-3.jpg)">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 col-lg-8 mx-auto">
+                                <div class="hero-content text-center">
+                                  
+									
+								
+                                   
+								  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</main>
+	
+	
+	
+	
+
+    <!-- Devotional Tour Section -->
+   
+
+    <!-- About Section -->
+    <div class="about" id="aboutus">
+        <h5 class="color-text">Welcome to</h5>
+        <h2>Cuckoo Tours & Travels</h2>
+        <img src="images/logo.png" alt="Cuckoo Logo" style="width: 280px; height: auto;">
+        <h4>About Us</h4>
+        <h3>We Provide Trusted <span class="yellow-span">Cab</span> <br/> <span class="yellow-span">Service</span> In The South India</h3>
+        <p>We are your trusted ride partner, offering reliable, safe, and affordable transportation. Our services include, Local and Outstation Cabs, One-Way and Round-Trip Bookings with a friendly customer support. We are here to make your every journey, short or long, comfortable and memorable.</p>
+        <p>Explore the world with us! We guarantee 
+Unforgettable experiences, comfortable Journeys and personalized service tailored to suit your needs and preferences.</p> 
+<p>Join us for an adventure of a lifetime!"</p>
+    </div>
+
+    <!-- Vehicles Section -->
+    <div class="vehicles-section" id="Vehicles">
+        <div class="container">
+            <h2>All Type of <br/><span class="yellow-span">Vehicles Available</span></h2>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="vehicle">
+                        <img src="images/vehicles-4.png" class="img-fluid rounded" alt="Swift Dzire">
+                        <p>Innova</p>
+                        <a href="https://wa.me/919488877851" class="theme-btn mt-4">Book Now<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="vehicle">
+                        <img src="images/vehicles-5.png" class="img-fluid rounded" alt="Innova">
+                        <p>Etios</p>
+                       <a href="https://wa.me/919488877851" class="theme-btn mt-4">Book Now<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="vehicle">
+                        <img src="images/vehicles-2.png" class="img-fluid rounded" alt="Etios">
+                        <p>Dzire</p>
+                       <a href="https://wa.me/919488877851" class="theme-btn mt-4">Book Now<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="vehicle">
+                        <img src="images/vehicles-7.png" class="img-fluid rounded" alt="Tempo Traveller">
+                        <p>Tempo Traveller</p>
+                       <a href="https://wa.me/919488877851" class="theme-btn mt-4">Book Now<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+				 <div class="col-12 col-md-6">
+                    <div class="vehicle">
+                        <img src="images/vehicles-8.png" class="img-fluid rounded" alt="Tempo Traveller">
+                        <p>Bus</p>
+                       <a href="https://wa.me/919488877851" class="theme-btn mt-4">Book Now<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Best Services Section -->
+    <div class="best-services" id="services">
+        <h2>Our Best <span class="yellow-span">Services</span></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="package">
+                        <img src="./images/services-1.png" alt="Coimbatore Tour Package">
+                         <p>Coimbatore Tour Package</p>
+                        <a href="https://wa.me/919488877851" class="theme-btn">BOOK NOW</a> 
+                    </div>
+                </div>
+                <div class="col-12 col-md-12">
+                    <div class="package">
+                        <img src="./images/services-2.png" alt="Devotional Tour Package">
+                         <p>Devotional Tour Package</p>
+                        <a href="https://wa.me/919488877851" class="theme-btn">BOOK NOW</a> 
+                    </div>
+                </div>
+                <div class="col-12 col-md-12">
+                    <div class="package">
+                        <img src="./images/services-3.png" alt="Adventure Tour Package">
+                         <p>Adventure Tour Package</p>
+                        <a href="https://wa.me/919488877851" class="theme-btn">BOOK NOW</a> 
+                    </div>
+                </div>
+                <div class="col-12 col-md-12">
+                    <div class="package">
+                        <img src="./images/services-4.png" alt="Honeymoon and Family Tour Package">
+                         <p>Honeymoon and Family Tour Package</p>
+                        <a href="https://wa.me/919488877851" class="theme-btn">BOOK NOW</a> 
+                    </div>
+                </div>
+                <div class="col-12 col-md-12">
+                    <div class="package">
+                        <img src="./images/services-5.png" alt="Trekking Package">
+                         <p>Trekking Package</p>
+                        <a href="https://wa.me/919488877851" class="theme-btn">BOOK NOW</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <main class="main">
+
+
+
+
+        <!-- choose area -->
+        <div class="choose-area cha-2 ">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="choose-content">
+                            <div class="site-heading wow fadeInDown mb-4" data-wow-delay=".25s">
+                                <span class="site-title-tagline text-white justify-content-start">
+                                    <i class="flaticon-drive"></i> Why Choose Us
+                                </span>
+                                <h2 class="site-title text-white mb-10">A Perfect Blend of  <span>Adventure </span> and tranquilty!</h2>
+                                
+                            </div>
+                            <div class="choose-img wow fadeInUp" data-wow-delay=".25s">
+                                <img src="assets/img/choose/01.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="choose-content-wrapper wow fadeInRight" data-wow-delay=".25s">
+                            <div class="choose-item">
+                                <span class="choose-count">01</span>
+                                <div class="choose-item-icon">
+                                    <img src="assets/img/icon/taxi-1.svg" alt="">
+                                </div>
+                                <div class="choose-item-info">
+                                    <h3>On time Pickup</h3>
+                                    <p>On Time! Every Time:
+That's a promise. No more waiting around or stressing about missed flights or being late for appointments. We will be right at time for your daily travel like that regular "punch in" in office to special days like that " first date with your 'one'"</p>
+                                </div>
+                            </div>
+                            <div class="choose-item ms-lg-5">
+                                <span class="choose-count">02</span>
+                                <div class="choose-item-icon">
+                                    <img src="assets/img/icon/driver.svg" alt="">
+                                </div>
+                                <div class="choose-item-info">
+                                    <h3>Clean Vehicle</h3>
+                                    <p>Cleanliness in every ride. Our vehicles are cleanly maintained to make your trip comfy and happy. Just focus on the journey with no disturbance because of the sticky seat or dirty interior.</p>
+                                </div>
+                            </div>
+                            <div class="choose-item mb-lg-5">
+                                <span class="choose-count">03</span>
+                                <div class="choose-item-icon">
+                                    <img src="assets/img/icon/taxi-location.svg" alt="">
+                                </div>
+                                <div class="choose-item-info">
+                                    <h3>Safe and Secure Journey</h3>
+                                    <p>Your Safety is our top Concern:
+Enjoy a safe and reliable ride. Our drivers are carefully selected, background verified, well trained and vehicles safely maintained. Our GPS tracking will get your safety covered. Sit back, relax and travel worry-free.</p>
+                                </div>
+                            </div>
+							  <div class="choose-item mb-lg-5">
+                                <span class="choose-count">03</span>
+                                <div class="choose-item-icon">
+                                    <img src="assets/img/icon/taxi-location.svg" alt="">
+                                </div>
+                                <div class="choose-item-info">
+                                    <h3>24/7 Customer Support</h3>
+                                    <p>Get instant assistance 24/7: Our dedicated customer support team is always here to help with bookings, cancellations, and any other queries. Call us anytime for a wonderful taxi experience.</p>
+                                </div>
+                            </div>
+							  <div class="choose-item">
+                                <span class="choose-count">05</span>
+                                <div class="choose-item-icon">
+                                    <img src="assets/img/icon/taxi-location.svg" alt="">
+                                </div>
+                                <div class="choose-item-info">
+                                    <h3>No Hidden Charges</h3>
+                                    <p>Tired of surprise fares and extra charges! 
+Here, what you find is what you pay. Our vehicles are economical and you will get a clear price mentioned. Let your worries of surprise charges go. Transparency is our motto!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<div class="banner-button">
+   
+    <a href="https://wa.me/919488877851" class="book-now">BOOK NOW</a>
+  </div>
+		 <div class="banner-area">
+		 <div class="banner">
+    <img src="images/slider-1.jpg" alt="Banner Image">
+   
+  </div>
+  
+  <div class="destinations destinations-top">
+   <div class="container">
+	 <div class="row">
+		<div class="col-md-4">
+			 <img src="images/book-1.png" alt="Thekkady">
+			<div class="destination-name">Thekkady</div>
+		</div>
+		<div class="col-md-4">
+			 <img src="images/book-2.png" alt="Thekkady">
+			<div class="destination-name">Munnar</div>
+		</div>
+		<div class="col-md-4">
+			 <img src="images/book-3.png" alt="Thekkady">
+			<div class="destination-name">Alleppey</div>
+		</div>
+	 </div>
+	 </div>
+  </div>
+  
+  <div class="destinations">
+   <div class="container">
+	 <div class="row">
+		<div class="col-md-4">
+			 <img src="images/book-4.png" alt="Thekkady">
+			<div class="destination-name">Ooty</div>
+		</div>
+		<div class="col-md-4">
+			 <img src="images/book-5.png" alt="Thekkady">
+			<div class="destination-name">Kodaikanal</div>
+		</div>
+		<div class="col-md-4">
+			 <img src="images/book-6.png" alt="Thekkady">
+			<div class="destination-name">Yercaud</div>
+		</div>
+	 </div>
+	 </div>
+  </div>
+  
+
+ 
+  </div>
+        
+
+
+        <!-- cta-area -->
+        <div class="cta-area" id="contact">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 text-center text-lg-start">
+                        <div class="cta-text cta-divider">
+                            <h1>Book Your Cab It's </br> Simple  And </br> Affordable</h1>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-center text-lg-end">
+                        <div class="mb-20">
+                            <a href="#" class="cta-number"><i class="far fa-headset"></i>9842244364<br/>9363931516</a> 
+                        
+                        </div>
+                        <div class="cta-btn">
+                            <a href="https://wa.me/919488877851" class="theme-btn">Book Your Cab<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cta-area end -->
+
+    </main>
+
+
+
+    <!-- footer area -->
+    <footer class="footer-area">
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row footer-widget-wrapper pt-120 pb-70">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="footer-widget-box about-us">
+                            <a href="#" class="footer-logo">
+                                <img src="assets/img/logo/logo.png" alt="">
+                            </a>
+                           
+                            <ul class="footer-contact">
+							<li><h5>HEAD OFFICE</h5></li>
+							<li><i class="far fa-map-marker-alt">
+								
+								</i>
+								15/8 Nehru Nagar,Ranga street <br/>
+                                    Edayarpalayam <br/>
+                                    Coimbatore <br/>
+                                    641025</li>
+                                <li><a href="tel:+9488877851"><i class="far fa-phone"></i>+91 9842244364 | +91 9363931516</a></li>
+                               
+                                
+                                <li><a href=""><i
+                class="far fa-envelope"></i><span class="__cf_email__" data-cfemail="85ecebe3eac5e0fde4e8f5e9e0abe6eae8">cuckootourism@gmail.com</span></a></li>
+                            </ul>
+							
+							 <ul class="footer-contact">
+							<li><h5>BRANCH OFFICE</h5></li>
+							<li><i class="far fa-map-marker-alt">
+								
+								</i>
+								#23, Bharathiyar Road,<br/>
+                                    Thalatheru,  <br/>
+                                    Karaikal <br/>
+                                    609605</li>
+                                <li><a href="tel:+9488877851"><i class="far fa-phone"></i>+91 8667756257</a></li>
+                               
+                                
+                                <li><a href=""><i
+                class="far fa-envelope"></i><span class="__cf_email__" data-cfemail="85ecebe3eac5e0fde4e8f5e9e0abe6eae8">cuckootourism@gmail.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-widget-box list">
+                            <h4 class="footer-widget-title">Quick Links</h4>
+                            <ul class="footer-list">
+                                <li><a href="#aboutus"><i class="fas fa-caret-right"></i> About Us</a></li>
+                                <li><a href="#Vehicles"><i class="fas fa-caret-right"></i> Vehicles</a></li>
+                                <li><a href="#services"><i class="fas fa-caret-right"></i> Services</a></li>
+                               
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-widget-box list">
+                            <h4 class="footer-widget-title">Support Center</h4>
+                            <ul class="footer-list">
+                               
+                                <li><a href="https://wa.me/919488877851"><i class="fas fa-caret-right"></i> Book A Ride</a></li>
+                                <li><a href="#contact"><i class="fas fa-caret-right"></i> Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 align-self-center">
+                        <p class="copyright-text">
+                            &copy; Copyright <span id="date"></span> <a href="#"> Cuckoo </a> All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6 align-self-center">
+                        <ul class="footer-social">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/cuckootours/profilecard/?igsh=MTdpOXg0ajN2cXlzcQ=="><i class="fab fa-instagram"></i></a></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+ <!-- Bootstrap JS and Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybYg6nZEmfF3k4hNVv3GJ26xwFzzpTkOdtfB6l+XxwD8uWlFh8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eykT93aO+90hlolKM8x5Hvc1p4cYPfmhQj17TfW4wJl7e7l9KfKePp3" crossorigin="anonymous"></script>
+
+    <!-- scroll-top -->
+    <a href="#" id="scroll-top"><i class="far fa-arrow-up"></i></a>
+    <!-- scroll-top end -->
+
+
+    <!-- js -->
+    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/counter-up.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/jquery.timepicker.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
